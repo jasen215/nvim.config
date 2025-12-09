@@ -132,6 +132,6 @@ return {
 		},
 	},
 	-- local plugins need to be explicitly configured with dir
-	{ dir = "~/repo/my/vim-oneleaf"},
+	{ "jasen215/oneleaf.vim" },
 	"ap/vim-css-color",
 }
