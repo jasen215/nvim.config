@@ -1,4 +1,4 @@
-# My Nvim Configure
+# nvim.config
 
 Config files for nvim.
 
@@ -24,7 +24,7 @@ You can change your leader key using the following setting in your `~/.config/nv
 ## Install
 
 ```
-git clone https://github.com/jasen215/config.nvim.git ~/.confie/nvim
+git clone https://github.com/jasen215/nvim.config.git ~/.config/nvim
 ```
 
 ## Manual Setup Steps
