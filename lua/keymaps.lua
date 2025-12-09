@@ -33,25 +33,5 @@ vim.keymap.set("v", ">", ">gv", opts)
 vim.g.mapleader = ","
 vim.g.maplocalleader = ","
 
-local map = vim.api.nvim_set_keymap
-map("n", "<leader>d", ":NvimTreeToggle<CR>", opts)
-map("n", "<leader>f", ":NvimTreeFindFile<CR>", opts)
-
-local builtin = require("telescope.builtin")
--- vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-vim.keymap.set("n", "<C-p>", builtin.find_files, {})
-vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
-vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
-vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
-vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
-vim.keymap.set("n", "<leader>r", builtin.treesitter, {})
-
--- split-term.vim
-vim.keymap.set("n", "<leader>t", ":10Term<CR>", opts)
-
--- The following command requires plug-ins "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim", and optionally "kyazdani42/nvim-web-devicons" for icon support
-vim.keymap.set("n", "<leader>td", ":Telescope diagnostics<CR>", opts)
--- -- If you don't want to use the telescope plug-in but still want to see all the errors/warnings, comment out the telescope line and uncomment this:
--- vim.keymap.set('n', '<leader>dd', '<cmd>lua vim.diagnostic.setloclist()<CR>', opts)
-
--- nvim-lspconfig
+-- Plugin keymaps are now defined in their respective plugin files in lua/plugins/
+-- nvim-lspconfig keymaps are defined in lua/plugins/lsp.lua

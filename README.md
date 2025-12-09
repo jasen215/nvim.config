@@ -27,3 +27,13 @@ You can change your leader key using the following setting in your `~/.config/nv
 git clone https://github.com/jasen215/config.nvim.git ~/.confie/nvim
 ```
 
+## Manual Setup Steps
+
+Due to a name-mapping issue in `mason-lspconfig.nvim` (as of `mason.nvim v2.1.0`), some language servers need to be installed manually after the initial setup. This issue may be resolved in future updates to the plugins.
+
+After cloning the configuration, run the following commands within Neovim to ensure all language servers are installed correctly:
+
+```
+:MasonInstall vue-language-server
+:MasonInstall typescript-language-server
+```
